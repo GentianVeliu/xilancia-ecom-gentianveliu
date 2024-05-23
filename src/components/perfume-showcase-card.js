@@ -13,7 +13,7 @@ function PerfumeShowcaseCard({ index, perfume }) {
         <p className="text-gray-600 mb-4 sm:text-base text-xs">
           {perfume.description}
         </p>
-        <button className="bg-black text-white sm:text-base text-xs py-2 px-4 rounded">
+        <button className="bg-black text-white hover:text-yellow-500 sm:text-base text-xs py-2 px-4 rounded">
           {perfume.buttonText}
         </button>
       </div>

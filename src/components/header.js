@@ -12,21 +12,21 @@ function Header() {
 
   return (
     <div className="bg-white text-black w-full px-10 sm:px-20 justify-between flex fixed z-10 items-center py-5">
-      <div role="link" className="flex justify-start items-center">
+      <a href="#banner" className="flex justify-start items-center">
         {/* Logo */}
         <img
           src="/assets/logo/logo.svg"
           alt="logo"
           className="w-52 cursor-pointer"
         />
-      </div>
+      </a>
       <div className="hidden lg:flex space-x-4 uppercase">
         {/* Navigation Links */}
         <Link
           to="banner"
           smooth={true}
           duration={500}
-          className="cursor-pointer hover:text-blue-400"
+          className="cursor-pointer hover:text-yellow-500"
         >
           Düftes
         </Link>
@@ -34,7 +34,7 @@ function Header() {
           to="maison-francis"
           smooth={true}
           duration={500}
-          className="cursor-pointer hover:text-blue-400"
+          className="cursor-pointer hover:text-yellow-500"
         >
           Über uns
         </Link>
@@ -42,7 +42,7 @@ function Header() {
           to="section3"
           smooth={true}
           duration={500}
-          className="cursor-pointer hover:text-blue-400"
+          className="cursor-pointer hover:text-yellow-500"
         >
           Blog
         </Link>
@@ -83,7 +83,7 @@ function Header() {
               to="banner"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-blue-400"
+              className="cursor-pointer hover:text-yellow-500"
               onClick={toggleMenu}
             >
               Düftes
@@ -92,7 +92,7 @@ function Header() {
               to="maison-francis"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-blue-400"
+              className="cursor-pointer hover:text-yellow-500"
               onClick={toggleMenu}
             >
               Über uns
@@ -101,7 +101,7 @@ function Header() {
               to="section3"
               smooth={true}
               duration={500}
-              className="cursor-pointer hover:text-blue-400"
+              className="cursor-pointer hover:text-yellow-500"
               onClick={toggleMenu}
             >
               Blog

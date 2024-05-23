@@ -1,4 +1,5 @@
 import Header from "./components/header";
+import ScrollUp from "./components/scroll-up";
 import Banner from "./sections/banner";
 import Brands from "./sections/brands";
 import Faq from "./sections/faq";
@@ -16,6 +17,7 @@ function App() {
       <MaisonFrancis />
       <PerfumeShowcase />
       <Faq />
+      <ScrollUp />
       <Footer />
     </div>
   );
