@@ -3,14 +3,16 @@ import React from "react";
 function Hero({ title, description, imageUrl, buttonText, from }) {
   return (
     <div
-      className={`relative  text-white w-full  bg-no-repeat bg-cover bg-center ${
+      className={`relative text-white w-full bg-no-repeat bg-cover ${
         // Conditional class to set height based on the "from" prop
-        from === "banner" ? "h-screen" : "h-[70vh]"
+        from === "banner"
+          ? "h-screen lg:bg-center bg-right"
+          : "h-[70vh] bg-center"
       } `}
       // Inline style to set the background image
       style={{ backgroundImage: `url(${imageUrl})` }}
     >
-      <div className="absolute inset-0 flex items-center sm:ml-20 ml-10 md:w-1/3 w-2/3">
+      <div className="absolute inset-0 flex items-center sm:ml-20 ml-10 md:w-1/3 w-2/3 ">
         <div>
           {/* Conditional class to set font size based on the "from" prop */}
           <h1
@@ -23,7 +25,7 @@ function Hero({ title, description, imageUrl, buttonText, from }) {
             {title}
           </h1>
           <p className="mt-4 text-base text-left">{description}</p>
-          <button className="mt-8 px-6 py-2 bg-white text-gray-800 font-semibold rounded">
+          <button className="mt-8 px-6 py-2 bg-white text-black hover:text-yellow-500 font-semibold rounded">
             {buttonText}
           </button>
         </div>

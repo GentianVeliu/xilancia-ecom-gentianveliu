@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div className="bg-black text-white py-10 sm:px-20 px-10">
       <div className="container lg:mx-auto grid grid-cols-1 lg:grid-cols-5 gap-7">
-        <div className="lg:col-span-1 flex flex-col items-center lg:items-start">
+        <div className="flex flex-col items-start">
           <img
             src="/assets/footer/footer-logo.png"
             alt="DuftSamples Logo"
@@ -38,11 +38,11 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-gray-800 pt-4 flex flex-col md:flex-row justify-between items-center">
-        <p className="text-xs text-center md:text-left">
+      <div className="mt-8 border-t border-gray-800 pt-4 flex flex-col md:flex-row md:justify-between md:items-center">
+        <p className="text-xs text-left">
           &copy; DUFTSAMPLES 2023. All Rights Reserved.
         </p>
-        <div className="grid sm:grid-cols-7 grid-cols-4 mt-4 md:mt-0 gap-1 ">
+        <div className="flex flex-row mt-4 md:mt-0 gap-1 ">
           {FooterIcons.map((item, index) => (
             <div
               key={index}
