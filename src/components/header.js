@@ -10,11 +10,6 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
-  // Function to close the menu
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
-
   return (
     <div className="bg-white text-black w-full px-10 sm:px-20 justify-between flex fixed z-10 items-center py-5">
       <div role="link" className="flex justify-start items-center">
@@ -128,12 +123,14 @@ function Header() {
         </div>
       )}
       {/* Clickable Overlay to Close Menu */}
-      <div
-        onClick={() => {
-          closeMenu();
-        }}
-        className="w-screen h-screen  fixed top-0 -z-10"
-      />
+      {menuOpen && (
+        <div
+          onClick={() => {
+            toggleMenu();
+          }}
+          className="w-screen h-screen  fixed top-0 -z-10"
+        />
+      )}
     </div>
   );
 }
